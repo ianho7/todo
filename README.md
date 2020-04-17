@@ -1,6 +1,6 @@
 # todo
 
-你好，此项目分享如何在Vue中使用Typescript，包括组件定义及Vuex的相关内容，若给你带来了积极影响，欢迎star🌟，不胜感谢。
+你好，此项目分享如何在Vue中使用Typescript，包括组件定义及Vuex的相关内容，点击查看[详细讲解](https://juejin.im/post/5e886ad751882573793e6fa4)，若给你带来了积极影响，欢迎star🌟，不胜感谢。
 
 Hello, the project will show you how to use Typescript in Vue, which contains components and vuex tips.
 
