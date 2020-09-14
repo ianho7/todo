@@ -41,7 +41,7 @@
 import { Component, Vue } from 'vue-property-decorator'
 import ITodo from '@/types/ITodo'
 import TodoItem from '@/components/TodoItem.vue'
-import { TodoStoreModule } from '@/store/modules/todo'
+import { TodoModule } from '@/store/modules/todo'
 
 @Component({
   name: 'TodoList',
@@ -66,20 +66,20 @@ export default class extends Vue {
 
   // 已完成数量
   get trashCount () {
-    return TodoStoreModule.trashCount > 0
-      ? `（共${TodoStoreModule.trashCount}项）`
+    return TodoModule.trashCount > 0
+      ? `（共${TodoModule.trashCount}项）`
       : ''
   }
 
   // 已完成数量
   get trashes () {
-    return TodoStoreModule.trashes
+    return TodoModule.trashes
   }
 
   // 将待办项设为完成
   public complete (index: number) {
     const targetTodo = this.todos.splice(index, 1)
-    TodoStoreModule.addTrash(targetTodo[0])
+    TodoModule.addTrash(targetTodo[0])
   }
 
   // 保存输入框内容

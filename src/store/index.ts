@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { TodoState } from '@/store/modules/todo'
+import { ITodoState } from '@/store/modules/todo'
 
 Vue.use(Vuex)
 
 export interface RootState {
-  todoStore: TodoState;
+  todo: ITodoState;
 }
 
 export default new Vuex.Store<RootState>({})

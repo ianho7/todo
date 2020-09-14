@@ -2,12 +2,12 @@ import { VuexModule, Module, Mutation, Action, getModule } from 'vuex-module-dec
 import store from '@/store'
 import ITodo from '@/types/ITodo'
 
-interface TodoStore {
+export interface ITodoState {
   trashes: ITodo[];
 }
 
 @Module({ dynamic: true, store, name: 'config' })
-class TodoStore extends VuexModule implements TodoStore {
+class Todo extends VuexModule implements ITodoState {
   public trashes: ITodo[] = [];
 
   @Mutation
@@ -25,4 +25,4 @@ class TodoStore extends VuexModule implements TodoStore {
   }
 };
 
-export const TodoStoreModule = getModule(TodoStore)
+export const TodoModule = getModule(Todo)

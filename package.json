@@ -49,7 +49,9 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {}
+    "rules": {
+      "@typescript-eslint/interface-name-prefix": 0
+    }
   },
   "browserslist": [
     "> 1%",
